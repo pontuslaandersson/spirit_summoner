@@ -91,5 +91,16 @@ t_attack        *create_attacks_list(char *type, int force)
         attack->extreme = -1;
         attack->next = NULL;
     }
+    if(ft_strcmp(type, "insect_queen") == 0)
+    {
+        attack->name = ft_strdup("Natural weapon");
+        attack->DV = divRoundClosest(force, 2);
+        attack->close = (force * 2);
+        attack->near = -1;
+        attack->medium = -1;
+        attack->far = -1;
+        attack->extreme = -1;
+        attack->next = NULL;
+    }
     return (attack);
 }

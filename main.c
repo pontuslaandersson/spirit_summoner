@@ -1,15 +1,33 @@
 #include "spirit_generator.h"
 
+static void            attackdel(t_attack *alst)
+{
+    t_attack  *list;
+    t_attack  *nextlist;
+
+        list = alst;
+        while (list)
+        {
+            nextlist = list->next;
+            ft_strdel(&list->name);
+            free(list);
+            list = nextlist;
+        }
+        alst = NULL;
+}
+
 int     main(int argc, char **argv)
 {
     t_block *spirit;
     int force;
 
-    if (argc != 3)
+    if (argc != 3 || (ft_strcmp(argv[1], "air") != 0 && ft_strcmp(argv[1], "beasts") != 0 && 
+    ft_strcmp(argv[1], "earth") != 0 && ft_strcmp(argv[1], "fire") != 0 && ft_strcmp(argv[1], "kin") != 0 &&
+    ft_strcmp(argv[1], "water") != 0 && ft_strcmp(argv[1], "insect_caretaker") != 0 &&
+    ft_strcmp(argv[1], "insect_nymph") != 0 && ft_strcmp(argv[1], "insect_scout") != 0 &&
+    ft_strcmp(argv[1], "insect_soldier") != 0 && ft_strcmp(argv[1], "insect_worker") != 0 && 
+    ft_strcmp(argv[1], "insect_queen") != 0))
     {
-        ft_putnbr(argc);
-        ft_putendl("");
-        ft_putendl(argv[1]);
         ft_putendl("usage: ./spirit_summoner [air/earth/fire/kin/water] [force as int]");
         return (-1);
     }
@@ -76,6 +94,12 @@ int     main(int argc, char **argv)
     ft_putendl("");
     print_attacks(spirit->ATTACKS);
     if (spirit != NULL)
+    {
+        attackdel(spirit->ATTACKS);
+        ft_strdel(&spirit->SKILLS);
+        ft_strdel(&spirit->POWERS);
+        ft_strdel(&spirit->BONUS_POWERS);
         free(spirit);
+    }
     return (0);
 }

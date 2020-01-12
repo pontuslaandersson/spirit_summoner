@@ -161,5 +161,162 @@ t_block *summon_spirit(char *type, int force)
         spirit->ATTACKS = create_attacks_list(type, force);
         spirit->ATTACKS = add_attack(spirit->ATTACKS, type, force);
     }
+    if(ft_strcmp(type, "insect_caretaker") == 0)
+    {
+        spirit->B = (force - 2);
+        if (spirit->B < 1)
+            spirit->B = 1;
+        spirit->A = (force + 3);
+        spirit->R = force + 4;
+        spirit->S = force - 3;
+        if (spirit->S < 1)
+            spirit->S = 1;
+        spirit->W = force;
+        spirit->L = force;
+        spirit->I = force;
+        spirit->C = force;
+        spirit->ESS = force;
+        spirit->MAG = force;
+        spirit->INIT = force + spirit->R;
+        spirit->AS_INIT = (force * 2);
+        spirit->DR = spirit->B;
+        spirit->AR = spirit->R + spirit->S;
+        spirit->CM = (divRoundClosest(force, 2)) + 8;
+        spirit->SKILLS = ft_strdup("Astral, Athletics, Close Combat, Exotic Ranged Weapon, Perception");
+        spirit->POWERS = ft_strdup("Accident, Astral Form, Concealment, Confusion, Engulf (Air), \nMaterialization, Movement, Sapience, Search");
+        spirit->BONUS_POWERS = ft_strdup("Elemental Attack (Cold), Elemental Attack (Electricity), \nEnergy Aura, Fear, Guard, Noxious Breath, Psychokinesis");
+        spirit->ATTACKS = create_attacks_list(type, force);
+        spirit->ATTACKS = add_attack(spirit->ATTACKS, type, force);
+    }
+    if(ft_strcmp(type, "insect_nymph") == 0)
+    {
+        spirit->B = (force - 2);
+        if (spirit->B < 1)
+            spirit->B = 1;
+        spirit->A = (force + 3);
+        spirit->R = force + 4;
+        spirit->S = force - 3;
+        if (spirit->S < 1)
+            spirit->S = 1;
+        spirit->W = force;
+        spirit->L = force;
+        spirit->I = force;
+        spirit->C = force;
+        spirit->ESS = force;
+        spirit->MAG = force;
+        spirit->INIT = force + spirit->R;
+        spirit->AS_INIT = (force * 2);
+        spirit->DR = spirit->B;
+        spirit->AR = spirit->R + spirit->S;
+        spirit->CM = (divRoundClosest(force, 2)) + 8;
+        spirit->SKILLS = ft_strdup("Astral, Athletics, Close Combat, Exotic Ranged Weapon, Perception");
+        spirit->POWERS = ft_strdup("Accident, Astral Form, Concealment, Confusion, Engulf (Air), \nMaterialization, Movement, Sapience, Search");
+        spirit->BONUS_POWERS = ft_strdup("Elemental Attack (Cold), Elemental Attack (Electricity), \nEnergy Aura, Fear, Guard, Noxious Breath, Psychokinesis");
+        spirit->ATTACKS = create_attacks_list(type, force);
+        spirit->ATTACKS = add_attack(spirit->ATTACKS, type, force);
+    }
+    if(ft_strcmp(type, "insect_scout") == 0)
+    {
+        spirit->B = (force - 2);
+        if (spirit->B < 1)
+            spirit->B = 1;
+        spirit->A = (force + 3);
+        spirit->R = force + 4;
+        spirit->S = force - 3;
+        if (spirit->S < 1)
+            spirit->S = 1;
+        spirit->W = force;
+        spirit->L = force;
+        spirit->I = force;
+        spirit->C = force;
+        spirit->ESS = force;
+        spirit->MAG = force;
+        spirit->INIT = force + spirit->R;
+        spirit->AS_INIT = (force * 2);
+        spirit->DR = spirit->B;
+        spirit->AR = spirit->R + spirit->S;
+        spirit->CM = (divRoundClosest(force, 2)) + 8;
+        spirit->SKILLS = ft_strdup("Astral, Athletics, Close Combat, Exotic Ranged Weapon, Perception");
+        spirit->POWERS = ft_strdup("Accident, Astral Form, Concealment, Confusion, Engulf (Air), \nMaterialization, Movement, Sapience, Search");
+        spirit->BONUS_POWERS = ft_strdup("Elemental Attack (Cold), Elemental Attack (Electricity), \nEnergy Aura, Fear, Guard, Noxious Breath, Psychokinesis");
+        spirit->ATTACKS = create_attacks_list(type, force);
+        spirit->ATTACKS = add_attack(spirit->ATTACKS, type, force);
+    }
+    if(ft_strcmp(type, "insect_soldier") == 0)
+    {
+        spirit->B = (force - 2);
+        if (spirit->B < 1)
+            spirit->B = 1;
+        spirit->A = (force + 3);
+        spirit->R = force + 4;
+        spirit->S = force - 3;
+        if (spirit->S < 1)
+            spirit->S = 1;
+        spirit->W = force;
+        spirit->L = force;
+        spirit->I = force;
+        spirit->C = force;
+        spirit->ESS = force;
+        spirit->MAG = force;
+        spirit->INIT = force + spirit->R;
+        spirit->AS_INIT = (force * 2);
+        spirit->DR = spirit->B;
+        spirit->AR = spirit->R + spirit->S;
+        spirit->CM = (divRoundClosest(force, 2)) + 8;
+        spirit->SKILLS = ft_strdup("Astral, Athletics, Close Combat, Exotic Ranged Weapon, Perception");
+        spirit->POWERS = ft_strdup("Accident, Astral Form, Concealment, Confusion, Engulf (Air), \nMaterialization, Movement, Sapience, Search");
+        spirit->BONUS_POWERS = ft_strdup("Elemental Attack (Cold), Elemental Attack (Electricity), \nEnergy Aura, Fear, Guard, Noxious Breath, Psychokinesis");
+        spirit->ATTACKS = create_attacks_list(type, force);
+        spirit->ATTACKS = add_attack(spirit->ATTACKS, type, force);
+    }
+    if(ft_strcmp(type, "insect_worker") == 0)
+    {
+        spirit->B = (force - 2);
+        if (spirit->B < 1)
+            spirit->B = 1;
+        spirit->A = (force + 3);
+        spirit->R = force + 4;
+        spirit->S = force - 3;
+        if (spirit->S < 1)
+            spirit->S = 1;
+        spirit->W = force;
+        spirit->L = force;
+        spirit->I = force;
+        spirit->C = force;
+        spirit->ESS = force;
+        spirit->MAG = force;
+        spirit->INIT = force + spirit->R;
+        spirit->AS_INIT = (force * 2);
+        spirit->DR = spirit->B;
+        spirit->AR = spirit->R + spirit->S;
+        spirit->CM = (divRoundClosest(force, 2)) + 8;
+        spirit->SKILLS = ft_strdup("Astral, Athletics, Close Combat, Exotic Ranged Weapon, Perception");
+        spirit->POWERS = ft_strdup("Accident, Astral Form, Concealment, Confusion, Engulf (Air), \nMaterialization, Movement, Sapience, Search");
+        spirit->BONUS_POWERS = ft_strdup("Elemental Attack (Cold), Elemental Attack (Electricity), \nEnergy Aura, Fear, Guard, Noxious Breath, Psychokinesis");
+        spirit->ATTACKS = create_attacks_list(type, force);
+        spirit->ATTACKS = add_attack(spirit->ATTACKS, type, force);
+    }
+    if(ft_strcmp(type, "insect_queen") == 0)
+    {
+        spirit->B = force + 5;
+        spirit->A = force + 3;
+        spirit->R = force + 4;
+        spirit->S = force + 5;
+        spirit->W = force + 1;
+        spirit->L = force + 1;
+        spirit->I = force;
+        spirit->C = force;
+        spirit->ESS = force;
+        spirit->MAG = force;
+        spirit->INIT = force + spirit->R;
+        spirit->AS_INIT = (force * 2);
+        spirit->DR = spirit->B;
+        spirit->AR = spirit->R + spirit->S;
+        spirit->CM = (divRoundClosest(force, 2)) + 8;
+        spirit->SKILLS = ft_strdup("Astral, Athletics, Close Combat, Exotic Ranged Weapon, Influence, Perception, Sorcery");
+        spirit->POWERS = ft_strdup("Animal Control (insect type), Astral Form, Astral Gateway, Banishing Resistance, Compulsion, \nEnhanced Senses (smell, thermographic vision, or ultrasound), Fear, Hive Mind, Materialization, Sapience, Search, Spirit Pact");
+        spirit->BONUS_POWERS = ft_strdup("Concealment, Guard, Natural weapon, Noxious Breath, Venom");
+        spirit->ATTACKS = create_attacks_list(type, force);
+    }
     return (spirit);
 }
