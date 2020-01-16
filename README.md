@@ -6,8 +6,13 @@ Compiles and prints (to standard output) stat blocks for spirits for Shadowrun S
 Compile with included libft library file (or replace with your own libft, if you have one).
 
 *Planned*
+
 Insect spirits
+
 Toxic spirits
+
 Blood spirits
+
 Shadow spirits
+
 Shedim
